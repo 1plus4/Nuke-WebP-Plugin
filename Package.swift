@@ -4,14 +4,14 @@ import PackageDescription
 let package = Package(
     name: "Nuke-WebP-Plugin",
     platforms: [
-        .iOS(.v13),
+        .iOS(.v12),
         .macOS(.v10_13),
         ],
     products: [
         .library(name: "NukeWebPPlugin", targets: ["NukeWebPPlugin"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/kean/Nuke.git", .upToNextMajor(from: "9.2.3")),
+        .package(url: "https://github.com/kean/Nuke.git"),
     ],
     targets: [
         .target(
